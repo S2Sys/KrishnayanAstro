@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2B77766E-7E7D-42DB-82FD-16FA914184D9}"
+	ProjectSection(SolutionItems) = preProject
+		About.txt = About.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KrishnyanAstro.Web", "KrishnyanAstro.Web\KrishnyanAstro.Web.csproj", "{19A9E6A2-67C4-4BDB-ACE1-D2C8B8CA0ABA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KrishnyanAstro.Core", "KrishnyanAstro.Core\KrishnyanAstro.Core.csproj", "{C939D560-7335-4061-AC65-31610532DC5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KrishnyanAstro.Infrastructure", "KrishnyanAstro.Infrastructure\KrishnyanAstro.Infrastructure.csproj", "{D8712A15-452E-43D1-94FC-F094B62A8493}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KrishnyanAstro.API", "KrishnyanAstro.API\KrishnyanAstro.API.csproj", "{937C554A-736C-4F59-A707-5E772E27E9BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KrishnyanAstro.Shared", "KrishnyanAstro.Shared\KrishnyanAstro.Shared.csproj", "{31660437-A7AF-4D8C-8D89-8AF6F5A1D018}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UX", "UX", "{CA8AA1B9-06E0-4AE9-BD14-2D8B8D06F7B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19A9E6A2-67C4-4BDB-ACE1-D2C8B8CA0ABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A9E6A2-67C4-4BDB-ACE1-D2C8B8CA0ABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A9E6A2-67C4-4BDB-ACE1-D2C8B8CA0ABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A9E6A2-67C4-4BDB-ACE1-D2C8B8CA0ABA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C939D560-7335-4061-AC65-31610532DC5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C939D560-7335-4061-AC65-31610532DC5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C939D560-7335-4061-AC65-31610532DC5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C939D560-7335-4061-AC65-31610532DC5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8712A15-452E-43D1-94FC-F094B62A8493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8712A15-452E-43D1-94FC-F094B62A8493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8712A15-452E-43D1-94FC-F094B62A8493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8712A15-452E-43D1-94FC-F094B62A8493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{937C554A-736C-4F59-A707-5E772E27E9BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{937C554A-736C-4F59-A707-5E772E27E9BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{937C554A-736C-4F59-A707-5E772E27E9BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{937C554A-736C-4F59-A707-5E772E27E9BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31660437-A7AF-4D8C-8D89-8AF6F5A1D018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31660437-A7AF-4D8C-8D89-8AF6F5A1D018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31660437-A7AF-4D8C-8D89-8AF6F5A1D018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31660437-A7AF-4D8C-8D89-8AF6F5A1D018}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{19A9E6A2-67C4-4BDB-ACE1-D2C8B8CA0ABA} = {2B77766E-7E7D-42DB-82FD-16FA914184D9}
+		{C939D560-7335-4061-AC65-31610532DC5D} = {2B77766E-7E7D-42DB-82FD-16FA914184D9}
+		{D8712A15-452E-43D1-94FC-F094B62A8493} = {2B77766E-7E7D-42DB-82FD-16FA914184D9}
+		{937C554A-736C-4F59-A707-5E772E27E9BA} = {2B77766E-7E7D-42DB-82FD-16FA914184D9}
+		{31660437-A7AF-4D8C-8D89-8AF6F5A1D018} = {2B77766E-7E7D-42DB-82FD-16FA914184D9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D6B15D5-E02D-4947-AEE7-45B22936728D}
+	EndGlobalSection
+EndGlobal

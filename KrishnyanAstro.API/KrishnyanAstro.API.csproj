@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Middleware\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KrishnyanAstro.Core\KrishnyanAstro.Core.csproj" />
+    <ProjectReference Include="..\KrishnyanAstro.Infrastructure\KrishnyanAstro.Infrastructure.csproj" />
+    <ProjectReference Include="..\KrishnyanAstro.Shared\KrishnyanAstro.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

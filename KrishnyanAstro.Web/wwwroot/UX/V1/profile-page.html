@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- Begin Head -->
+
+<head>
+  <title>Profile Page</title>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta name="MobileOptimized" content="320" />
+	<link rel="stylesheet" type="text/css" href="assets/fonts/my-icons-font/flaticon_ast.css" />
+
+  <link rel="shortcut icon" type="image/png" href="assets/images/header/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="assets/css/main.min.css" />
+</head>
+
+<body class="bg-light">
+
+
+  <div class="ast_header_bottom">
+		<div class="menu-part" role="button" data-bs-target="#sidemenu" data-bs-toggle="offcanvas">
+			<i class="fi flaticon-menu-1 fs-5"></i>
+			<span class="d-none d-lg-inline-block fs-5">Menu</span>
+		</div>
+
+		<div class="d-flex align-items-center gap-2 w-100 justify-content-between right-part">
+			<div class="ast_logo">
+				<a href="index.html"><img src="assets/images/logo.svg" class="ps-3" alt="Logo" title="Logo" /></a>
+			</div>
+
+			<a href="#" class="text-nowrap short-panchang rounded-0 d-none" data-ripple>
+				<div class="monthdate">
+					Bhadrapada,
+					<span class=""> Shukla-Dashami </span>
+				</div>
+				<div class="festival-name">No Festival Today</div>
+			</a>
+
+			<div class="search-panel flex-grow-1 d-none d-lg-flex mx-4">
+				<input type="text" class="form-control" placeholder="Search here..." />
+			</div>
+
+			<div class="d-flex align-items-center gap-4">
+				<div type="button" class="position-relative shadow-none" data-bs-toggle="offcanvas"
+					data-bs-target="#shoping-cart">
+					<i class="fi flaticon-rating fs-4"></i>
+					<span class="position-absolute top-0 start-100 translate-middle badge bg-danger">
+						2
+						<span class="visually-hidden">unread messages</span>
+					</span>
+				</div>
+				<div class="d-none d-lg-block ms-auto">
+					<div class="dropdown">
+						<a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							EN
+						</a>
+
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Hindi</a></li>
+							<li><a class="dropdown-item" href="#">English</a></li>
+							<li><a class="dropdown-item" href="#">Punjabi</a></li>
+						</ul>
+					</div>
+				</div>
+
+        <div class="dropdown me-2">
+          <div class="dropdown-toggle d-ruby" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="d-flex align-items-center">
+              <img src="assets/images/profile-img.png" alt="">
+              <div class="text-start ms-2 text-nowrap lh-1 d-none d-lg-block">
+                <small class="d-block mb-1"> Welcome,</small>
+                <span class="fw-bold">Amit Rana</span>
+              </div>
+            </div>
+          </div>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </div>
+			</div>
+		</div>
+	</div>
+
+
+  <section class="section-spacing  position-relative plustoppadding">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-8 offset-lg-3">
+         
+            <h1 class="fw-semibold">Good Morning, Amit Rana</h1>
+            <p>Today Aug 22, 2020 | 7:23 PM</p>
+          
+        </div>
+        <div class="col-lg-3">
+          <div class="d-lg-none vertical-menu mobile-mneu">
+            <ul class="has-submenu"> 
+              <li><a class="steplink" data-step="0">Personal Details</a></li>
+              <li><a class="steplink" data-step="1">Birth Details</a></li>
+              <li><a class="steplink" data-step="2">Address Details</a></li>
+            </ul>           
+          </div>
+          <nav class="vertical-menu d-none d-lg-block">
+            <ul>
+
+              <li class="has-submenu active">
+                <a href="#"><i class="fi flaticon-user"></i> My profile</a>
+                <ul class="submenu">
+                  <li><a class="steplink" data-step="0">Personal Details</a></li>
+                  <li><a class="steplink" data-step="1">Birth Details</a></li>
+                  <li><a class="steplink" data-step="2">Address Details</a></li>
+                </ul>
+              </li>
+              <li><a href=""><i class="fi flaticon-user"></i> Saved kundali</a></li>
+              <li><a href=""><i class="fi flaticon-user"></i> My Wallet</a></li>
+              <li><a href=""><i class="fi flaticon-user"></i> Notifications</a></li>
+              <li><a href=""><i class="fi flaticon-user"></i> Astro talk</a></li>
+              <li><a href=""><i class="fi flaticon-user"></i> Settings</a></li>
+              <li><a href=""><i class="fi flaticon-user"></i> Logout</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-9">
+          
+          <div class="card border-0 rounded-4 p-lg-3">
+            <div class="card-body">
+              <div class="row g-lg-5 g-4">
+                <div class="col-lg-6">
+                  <div class="profile-update">
+                    <img src="assets/images/profile.png" alt="">
+                    <div class="w-100">
+                      <div class="name">Amit rana <span class="joindate">Join Sep 2024</span></div>
+                      <div class="progress ">
+                        <div class="progress-bar" role="progressbar" style="width: 0%" id="progressBar"
+                          aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-percentage="0%">
+                          <!-- The percentage will be displayed using the ::after pseudo-element -->
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                  <h2 class="fs-5 fw-semibold mb-3">Suggestion</h2>
+                  <ul class="list-style-1">
+                    <li><a>Talk To Premium Astrologer <i class="fi flaticon-chevron ms-auto"></i></a></li>
+                    <li><a>First Chat free <i class="fi flaticon-chevron ms-auto"></i></a> </li>
+                  </ul>
+                </div>
+
+                <div class="col-lg-12">
+                  <div id="formWizard" class="form-wizard">
+                    <!-- Step 1 -->
+                    <div class="step active">
+
+
+                      <div class="row g-lg-4 gy-2">
+                        <div class="col-lg-12">
+                          <h3 class="step-title">Personal Details</h3>
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="" class="col-form-label">Full Name</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="" class="col-form-label">Gender</label>
+                          <select name="" class="form-select" id="">
+                            <option value="">Select Gender</option>
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                          </select>
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="" class="col-form-label">Phone Number</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="" class="col-form-label">Email Address</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="col-lg-12">
+                          <button type="button" class="btn btn-dark mt-3 d-block ms-auto mw-100px"
+                            onclick="nextStep()">Next</button>
+                        </div>
+                      </div>
+
+
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="step">
+                      <div class="row g-4">
+                        <div class="col-lg-12">
+                          <h3 class="step-title">Birth Details</h3>
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="" class="col-form-label">Date of Birth</label>
+                          <input type="date" class="form-control">
+                        </div>
+
+                        <div class="col-lg-6">
+                          <label for="" class="col-form-label">Time of Birth</label>
+                          <input type="time" class="form-control">
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="" class="col-form-label">Place Of Birth</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="col-lg-12">
+                          <div class="d-flex align-items-center justify-content-between mt-3">
+                            <button type="button" class="btn btn-outline-dark mw-100px"
+                              onclick="prevStep()">Prev</button>
+                            <button type="button" class="btn btn-dark mw-100px" onclick="nextStep()">Next</button>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="step">
+                      <div class="row g-4">
+                        <div class="col-lg-12">
+                          <h3 class="step-title">Address Details</h3>
+                        </div>
+                        <div class="col-lg-12">
+                          <button class="btn btn-outline-primary rounded-1 w-100 d-flex align-items-center gap-2 ">
+                            <i class="fi flaticon-add-location fs-18"></i> Add New Address
+                          </button>
+                        </div>
+
+                        <div class="col-lg-12">
+                          <div class="address-list">
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                <div class="text-address">
+
+                                  <div class="addressname">
+                                    Home Address
+                                  </div>
+                                  <div class="fulladdress">
+                                    <strong>Amit <span>9958904099</span></strong>
+                                    <address>USB-203 Mandawali fazalpur delhi-92, east delhi, New Delhi, Delhi - 110092
+                                    </address>
+                                  </div>
+                                 
+
+                                </div>
+
+                                <div class="edit-address">
+
+
+                                  <div class="container">
+                                    <div class="row g-3">
+                                      <div class="col-lg-12 fw-bold">
+                                        Edit Address
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="form-floating">
+                                          <input type="text" class="form-control" value="Home Address"
+                                            id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Address Name</label>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="form-floating">
+                                          <input type="text" class="form-control" value="Amit" id="floatingInput"
+                                            placeholder="name@example.com">
+                                          <label for="floatingInput">Name</label>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="form-floating">
+                                          <input type="text" class="form-control" id="floatingInput" value="9958904099"
+                                            placeholder="name@example.com">
+                                          <label for="floatingInput">Phone Number</label>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-6">
+                                        <div class="form-floating">
+                                          <input type="text" class="form-control" id="floatingInput" value="110092"
+                                            placeholder="name@example.com">
+                                          <label for="floatingInput">Pincode</label>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-6">
+                                        <div class="form-floating">
+                                          <input type="text" class="form-control" id="floatingInput" value="East Delhi"
+                                            placeholder="name@example.com">
+                                          <label for="floatingInput">Locality</label>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-12">
+                                        <div class="form-floating">
+                                          <textarea class="form-control border-0" placeholder=""
+                                            id="floatingTextarea2"
+                                            style="height: 100px">USB-203 Mandawali fazalpur Delhi-110092</textarea>
+                                          <label for="floatingTextarea2">Address</label>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-6">
+                                        <div class="form-floating">
+                                          <select class="form-select" id="floatingSelect"
+                                            aria-label="Floating label select example">
+                                            <option selected>Delhi</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                          </select>
+                                          <label for="floatingSelect">State</label>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-6">
+                                        <div class="form-floating">
+                                          <input type="text" class="form-control" id="floatingInput" value="New Delhi"
+                                            placeholder="name@example.com">
+                                          <label for="floatingInput">City/District/Town</label>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-12 text-center">
+                                        <button class="btn btn-outline-primary mw-100px me-3 cancelupbtn">Cancel</button>
+                                        <button class="btn btn-primary mw-100px">Save</button>
+                                      </div>
+
+
+
+
+                                    </div>
+
+                                  </div>
+
+
+                                </div>
+                                <button class="btn btn-sm btn-outline-dark editbtn"> <i
+                                  class="fi flaticon-pencil"></i> Edit </button>
+                              </li>
+                              <li class="list-group-item">
+                                <div class="text-address">
+
+                                  <div class="addressname">
+                                    Work Address
+                                  </div>
+                                  <div class="fulladdress">
+                                    <strong>Amit <span>9958904099</span></strong>
+                                    <address>USB-203 Mandawali fazalpur delhi-92, east delhi, New Delhi, Delhi - 110092
+                                    </address>
+                                  </div>
+                                  
+
+                                </div>
+
+                                <div class="edit-address">
+
+
+                                  <div class="container">
+                                    <div class="row g-3">
+                                      <div class="col-lg-12 fw-bold">
+                                        Edit Address
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="form-floating">
+                                          <input type="text" class="form-control" value="Home Address"
+                                            id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Address Name</label>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="form-floating">
+                                          <input type="text" class="form-control" value="Amit" id="floatingInput"
+                                            placeholder="name@example.com">
+                                          <label for="floatingInput">Name</label>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="form-floating">
+                                          <input type="text" class="form-control" id="floatingInput" value="9958904099"
+                                            placeholder="name@example.com">
+                                          <label for="floatingInput">Phone Number</label>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-6">
+                                        <div class="form-floating">
+                                          <input type="text" class="form-control" id="floatingInput" value="110092"
+                                            placeholder="name@example.com">
+                                          <label for="floatingInput">Pincode</label>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-6">
+                                        <div class="form-floating">
+                                          <input type="text" class="form-control" id="floatingInput" value="East Delhi"
+                                            placeholder="name@example.com">
+                                          <label for="floatingInput">Locality</label>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-12">
+                                        <div class="form-floating">
+                                          <textarea class="form-control border-0" placeholder=""
+                                            id="floatingTextarea2"
+                                            style="height: 100px">USB-203 Mandawali fazalpur Delhi-110092</textarea>
+                                          <label for="floatingTextarea2">Address</label>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-6">
+                                        <div class="form-floating">
+                                          <select class="form-select" id="floatingSelect"
+                                            aria-label="Floating label select example">
+                                            <option selected>Delhi</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                          </select>
+                                          <label for="floatingSelect">State</label>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-6">
+                                        <div class="form-floating">
+                                          <input type="text" class="form-control" id="floatingInput" value="New Delhi"
+                                            placeholder="name@example.com">
+                                          <label for="floatingInput">City/District/Town</label>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-12 text-center">
+                                        <button class="btn btn-outline-primary mw-100px me-3 cancelupbtn">Cancel</button>
+                                        <button class="btn btn-primary mw-100px">Save</button>
+                                      </div>
+
+
+
+
+                                    </div>
+
+                                  </div>
+
+
+                                </div>
+                                <button class="btn btn-sm btn-outline-dark editbtn"> <i
+                                  class="fi flaticon-pencil"></i> Edit </button>
+                              </li>
+                            </ul>
+
+
+
+
+                          </div>
+                        </div>
+
+
+                        <div class="col-lg-12">
+                          <div class="d-flex align-items-center justify-content-between mt-3">
+                            <button type="button" class="btn btn-outline-dark mw-100px"
+                              onclick="prevStep()">Prev</button>
+                            <button type="button" class="btn btn-primary mw-100px" onclick="nextStep()">Next</button>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="ast_footer_wrapper ast_toppadder70 ast_bottompadder20 position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+          <div class="ast_footer_info">
+            <img src="assets/images/logo.svg" alt="Logo" />
+            <p>
+              It is a long established fact that a reader will be distracted
+              by the readable content of a page when looking at its layout.
+              The point of using Lorem Ipsum is that it has a more-or less
+              normal distribution of letters, as opposed to using 'Content
+              here, content here', making it look like readable English.
+            </p>
+            <ul>
+              <li>
+                <a href="#"><i class="fi fi-brands-facebook" aria-hidden="true"></i></a>
+              </li>
+
+              <li>
+                <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+          <div class="widget text-widget">
+            <h4 class="widget-title">our newsletter</h4>
+            <div class="ast_newsletter">
+              <p>
+                Making it look like readable English.The point of using Lorem
+                Ipsum is that it has a more-or less normal distribution of
+                letters.
+              </p>
+              <div class="ast_newsletter_box">
+                <input type="text" placeholder="Email" />
+                <button type="submit">
+                  <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+          <div class="widget text-widget">
+            <h4 class="widget-title">Astro services</h4>
+            <div class="ast_servicelink">
+              <ul>
+                <li><a href="#">horoscopes</a></li>
+                <li><a href="#">palmistry</a></li>
+                <li><a href="#">numerology</a></li>
+                <li><a href="#">Kundali</a></li>
+                <li><a href="#">Match Making</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 col-12">
+          <div class="widget text-widget">
+            <h4 class="widget-title">quick links</h4>
+            <div class="ast_sociallink">
+              <ul>
+                <li><a href="#">about</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">Astrologers</a></li>
+                <li><a href="#">404 error</a></li>
+                <li><a href="#">contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+          <div class="widget text-widget">
+            <h4 class="widget-title">get in touch</h4>
+            <div class="ast_gettouch">
+              <ul>
+                <li>
+                  <i class="fa fa-home" aria-hidden="true"></i>
+                  <p>
+                    Haripur Kalaan, Near Prem Vihar chowk, Haridwar,
+                    District-Dehradun (Uttrakhand)
+                  </p>
+                </li>
+                <li>
+                  <i class="fa fa-at" aria-hidden="true"></i>
+                  <a href="#">care@krishnayanastro.com</a>
+                </li>
+                <li>
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <p>+91 8755955000</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+          <div class="ast_copyright_wrapper">
+            <p>
+              &copy; Copyright 2024, All Rights Reserved,
+              <a href="#">Krishnayan Astro</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="shoping-cart">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Shoping Cart</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="ast_cart_bo">
+        <div class="ast_cart_list">
+          <ul>
+            <li>
+              <div class="ast_cart_img">
+                <img src="assets/images/content/products/Fengshui.jpg" class="img-responsive" />
+              </div>
+              <div class="ast_cart_info">
+                <a href="#">Yellow Sapphire</a>
+                <p>1 X ₹20.00</p>
+                <a href="javascript:;" class="ast_cart_remove"><i class="fa fa-trash"></i></a>
+              </div>
+            </li>
+            <li>
+              <div class="ast_cart_img">
+                <img src="assets/images/content/products/Gemstone.jpg" class="img-responsive" />
+              </div>
+              <div class="ast_cart_info">
+                <a href="#">yantra</a>
+                <p>1 X ₹10.00</p>
+                <a href="javascript:;" class="ast_cart_remove"><i class="fa fa-trash"></i></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas-fotter">
+      <div class="px-3">
+        <p class="d-flex justify-content-between">Total<span>₹3000</span></p>
+      </div>
+      <div class="d-flex gap-3 p-3">
+        <button type="button" class="btn btn-outline-primary w-100">
+          view cart
+        </button>
+        <button type="button" class="btn btn-primary w-100">checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="sidemenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">
+        <img src="assets/images/logo.svg" alt="" />
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-group">
+        <li><a href="">Home</a></li>
+        <li><a href="">About us</a></li>
+        <li>Our Services</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer wrapper End-->
+  <!--Main js file Style-->
+  <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+  <!--Main js file End-->
+
+
+
+  <script>
+
+document.querySelectorAll(".editbtn").forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    const parent = this.parentElement;
+    parent.querySelector('.text-address').style.display = 'none';
+    parent.querySelector('.edit-address').style.display = 'block';
+    this.style.display = 'none';
+  });
+});
+
+document.querySelectorAll(".cancelupbtn").forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    const closestItem = this.closest(".list-group-item");
+    closestItem.querySelector('.text-address').style.display = 'block';
+    closestItem.querySelector('.edit-address').style.display = 'none';
+    closestItem.querySelector(".editbtn").style.display = 'inline-block';
+  });
+});
+
+
+
+    let currentStep = 0;
+  const steps = document.querySelectorAll('.step');
+  const progressBar = document.getElementById('progressBar');
+  const stepLinks = document.querySelectorAll('.has-submenu .steplink');
+
+
+
+
+ 
+
+
+  // Function to show a specific step
+  function showStep(step) {
+    steps.forEach((el, index) => {
+      el.classList.toggle('active', index === step);
+    });
+    updateProgressBar(step);
+    updateStepLinks(step);
+  }
+
+  // Function to move to the next step
+  function nextStep() {
+    if (currentStep < steps.length - 1) {
+      currentStep++;
+      showStep(currentStep);
+    }
+  }
+
+  // Function to move to the previous step
+  function prevStep() {
+    if (currentStep > 0) {
+      currentStep--;
+      showStep(currentStep);
+    }
+  }
+
+  // Function to update the progress bar
+  function updateProgressBar(step) {
+    const progressPercent = Math.round(((step + 1) / steps.length) * 100);
+    progressBar.style.width = progressPercent + '%';
+    progressBar.setAttribute('aria-valuenow', progressPercent);
+    progressBar.setAttribute('data-percentage', progressPercent + '%');
+  }
+
+
+
+  // Function to update active step links
+  function updateStepLinks(step) {
+  stepLinks.forEach((link, index) => {
+    link.classList.toggle('active', index === step);
+    console.log('Updating step link:', link, 'Index:', index, 'Current step:', step);
+  });
+}
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('Page loaded - DOMContentLoaded listener added');
+  showStep(currentStep); // Only called once
+});
+
+
+
+
+  // Function to handle clicking on step links
+  function goToStep(step) {
+    currentStep = step;
+    showStep(currentStep);
+  }
+
+  // Add event listeners to step links
+  stepLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const step = parseInt(e.target.getAttribute('data-step'));
+      goToStep(step);
+    });
+  });
+
+  // Initialize progress bar on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    showStep(currentStep);
+  });
+
+
+
+    // vertical menu
+    document.addEventListener('DOMContentLoaded', () => {
+      // Select all menu items that have a submenu
+      const menuItems = document.querySelectorAll('.vertical-menu .has-submenu > a');
+
+      menuItems.forEach(item => {
+        item.addEventListener('click', (e) => {
+          e.preventDefault(); // Prevent default link behavior
+
+          const parent = item.parentElement;
+
+          // Toggle the 'active' class on the parent <li>
+          parent.classList.toggle('active');
+
+          // Optionally, close other open submenus
+          menuItems.forEach(otherItem => {
+            if (otherItem !== item) {
+              otherItem.parentElement.classList.remove('active');
+            }
+          });
+        });
+      });
+    });
+
+
+
+  </script>
+
+</body>
+
+</html>

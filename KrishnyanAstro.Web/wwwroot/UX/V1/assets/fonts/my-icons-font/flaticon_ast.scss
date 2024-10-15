@@ -1,0 +1,273 @@
+$flaticon_ast-font: "flaticon_ast";
+
+@font-face {
+    font-family: $flaticon_ast-font;
+    src: url("./flaticon_ast.woff2?a40d46aced30bb056797a58fbe9c343a") format("woff2"),
+url("./flaticon_ast.woff?a40d46aced30bb056797a58fbe9c343a") format("woff"),
+url("./flaticon_ast.eot?a40d46aced30bb056797a58fbe9c343a#iefix") format("embedded-opentype"),
+url("./flaticon_ast.ttf?a40d46aced30bb056797a58fbe9c343a") format("truetype"),
+url("./flaticon_ast.svg?a40d46aced30bb056797a58fbe9c343a#flaticon_ast") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_ast !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_ast-map: (
+    "wallet": "\f101",
+    "chat": "\f102",
+    "user": "\f103",
+    "earth-grid": "\f104",
+    "loupe": "\f105",
+    "pencil": "\f106",
+    "notification": "\f107",
+    "alarm": "\f108",
+    "settings": "\f109",
+    "exit": "\f10a",
+    "tarot": "\f10b",
+    "horoscope": "\f10c",
+    "horoscope-1": "\f10d",
+    "scorpio": "\f10e",
+    "gemini": "\f10f",
+    "mars": "\f110",
+    "aries": "\f111",
+    "gemini-1": "\f112",
+    "leo": "\f113",
+    "virgo": "\f114",
+    "taurus": "\f115",
+    "pisces": "\f116",
+    "air": "\f117",
+    "sagittarius": "\f118",
+    "water": "\f119",
+    "pluto": "\f11a",
+    "astrology": "\f11b",
+    "sun": "\f11c",
+    "moon": "\f11d",
+    "zodiac": "\f11e",
+    "quality": "\f11f",
+    "next": "\f120",
+    "back": "\f121",
+    "left-arrow": "\f122",
+    "shopping-bag": "\f123",
+    "menu": "\f124",
+    "chevron": "\f125",
+    "left-chevron": "\f126",
+    "facebook-logo": "\f127",
+    "twitter": "\f128",
+    "facebook": "\f129",
+    "linkedin": "\f12a",
+    "youtube": "\f12b",
+    "add-location": "\f12c",
+    "placeholder": "\f12d",
+    "cross": "\f12e",
+    "close": "\f12f",
+    "plus": "\f130",
+    "trash-bin": "\f131",
+    "home-icon-silhouette": "\f132",
+    "email": "\f133",
+    "phone-call": "\f134",
+    "paper-plane": "\f135",
+    "google": "\f136",
+    "loupe-1": "\f137",
+    "rating": "\f138",
+    "gift-bag": "\f139",
+    "help": "\f13a",
+    "menu-1": "\f13b",
+    "global": "\f13c",
+    "black-hole": "\f13d",
+    "user-1": "\f13e",
+);
+
+.flaticon-wallet:before {
+    content: map-get($flaticon_ast-map, "wallet");
+}
+.flaticon-chat:before {
+    content: map-get($flaticon_ast-map, "chat");
+}
+.flaticon-user:before {
+    content: map-get($flaticon_ast-map, "user");
+}
+.flaticon-earth-grid:before {
+    content: map-get($flaticon_ast-map, "earth-grid");
+}
+.flaticon-loupe:before {
+    content: map-get($flaticon_ast-map, "loupe");
+}
+.flaticon-pencil:before {
+    content: map-get($flaticon_ast-map, "pencil");
+}
+.flaticon-notification:before {
+    content: map-get($flaticon_ast-map, "notification");
+}
+.flaticon-alarm:before {
+    content: map-get($flaticon_ast-map, "alarm");
+}
+.flaticon-settings:before {
+    content: map-get($flaticon_ast-map, "settings");
+}
+.flaticon-exit:before {
+    content: map-get($flaticon_ast-map, "exit");
+}
+.flaticon-tarot:before {
+    content: map-get($flaticon_ast-map, "tarot");
+}
+.flaticon-horoscope:before {
+    content: map-get($flaticon_ast-map, "horoscope");
+}
+.flaticon-horoscope-1:before {
+    content: map-get($flaticon_ast-map, "horoscope-1");
+}
+.flaticon-scorpio:before {
+    content: map-get($flaticon_ast-map, "scorpio");
+}
+.flaticon-gemini:before {
+    content: map-get($flaticon_ast-map, "gemini");
+}
+.flaticon-mars:before {
+    content: map-get($flaticon_ast-map, "mars");
+}
+.flaticon-aries:before {
+    content: map-get($flaticon_ast-map, "aries");
+}
+.flaticon-gemini-1:before {
+    content: map-get($flaticon_ast-map, "gemini-1");
+}
+.flaticon-leo:before {
+    content: map-get($flaticon_ast-map, "leo");
+}
+.flaticon-virgo:before {
+    content: map-get($flaticon_ast-map, "virgo");
+}
+.flaticon-taurus:before {
+    content: map-get($flaticon_ast-map, "taurus");
+}
+.flaticon-pisces:before {
+    content: map-get($flaticon_ast-map, "pisces");
+}
+.flaticon-air:before {
+    content: map-get($flaticon_ast-map, "air");
+}
+.flaticon-sagittarius:before {
+    content: map-get($flaticon_ast-map, "sagittarius");
+}
+.flaticon-water:before {
+    content: map-get($flaticon_ast-map, "water");
+}
+.flaticon-pluto:before {
+    content: map-get($flaticon_ast-map, "pluto");
+}
+.flaticon-astrology:before {
+    content: map-get($flaticon_ast-map, "astrology");
+}
+.flaticon-sun:before {
+    content: map-get($flaticon_ast-map, "sun");
+}
+.flaticon-moon:before {
+    content: map-get($flaticon_ast-map, "moon");
+}
+.flaticon-zodiac:before {
+    content: map-get($flaticon_ast-map, "zodiac");
+}
+.flaticon-quality:before {
+    content: map-get($flaticon_ast-map, "quality");
+}
+.flaticon-next:before {
+    content: map-get($flaticon_ast-map, "next");
+}
+.flaticon-back:before {
+    content: map-get($flaticon_ast-map, "back");
+}
+.flaticon-left-arrow:before {
+    content: map-get($flaticon_ast-map, "left-arrow");
+}
+.flaticon-shopping-bag:before {
+    content: map-get($flaticon_ast-map, "shopping-bag");
+}
+.flaticon-menu:before {
+    content: map-get($flaticon_ast-map, "menu");
+}
+.flaticon-chevron:before {
+    content: map-get($flaticon_ast-map, "chevron");
+}
+.flaticon-left-chevron:before {
+    content: map-get($flaticon_ast-map, "left-chevron");
+}
+.flaticon-facebook-logo:before {
+    content: map-get($flaticon_ast-map, "facebook-logo");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon_ast-map, "twitter");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon_ast-map, "facebook");
+}
+.flaticon-linkedin:before {
+    content: map-get($flaticon_ast-map, "linkedin");
+}
+.flaticon-youtube:before {
+    content: map-get($flaticon_ast-map, "youtube");
+}
+.flaticon-add-location:before {
+    content: map-get($flaticon_ast-map, "add-location");
+}
+.flaticon-placeholder:before {
+    content: map-get($flaticon_ast-map, "placeholder");
+}
+.flaticon-cross:before {
+    content: map-get($flaticon_ast-map, "cross");
+}
+.flaticon-close:before {
+    content: map-get($flaticon_ast-map, "close");
+}
+.flaticon-plus:before {
+    content: map-get($flaticon_ast-map, "plus");
+}
+.flaticon-trash-bin:before {
+    content: map-get($flaticon_ast-map, "trash-bin");
+}
+.flaticon-home-icon-silhouette:before {
+    content: map-get($flaticon_ast-map, "home-icon-silhouette");
+}
+.flaticon-email:before {
+    content: map-get($flaticon_ast-map, "email");
+}
+.flaticon-phone-call:before {
+    content: map-get($flaticon_ast-map, "phone-call");
+}
+.flaticon-paper-plane:before {
+    content: map-get($flaticon_ast-map, "paper-plane");
+}
+.flaticon-google:before {
+    content: map-get($flaticon_ast-map, "google");
+}
+.flaticon-loupe-1:before {
+    content: map-get($flaticon_ast-map, "loupe-1");
+}
+.flaticon-rating:before {
+    content: map-get($flaticon_ast-map, "rating");
+}
+.flaticon-gift-bag:before {
+    content: map-get($flaticon_ast-map, "gift-bag");
+}
+.flaticon-help:before {
+    content: map-get($flaticon_ast-map, "help");
+}
+.flaticon-menu-1:before {
+    content: map-get($flaticon_ast-map, "menu-1");
+}
+.flaticon-global:before {
+    content: map-get($flaticon_ast-map, "global");
+}
+.flaticon-black-hole:before {
+    content: map-get($flaticon_ast-map, "black-hole");
+}
+.flaticon-user-1:before {
+    content: map-get($flaticon_ast-map, "user-1");
+}
