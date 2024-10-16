@@ -1,0 +1,441 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - KrishnyanAstro.Web</title>@* 
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/KrishnyanAstro.Web.styles.css" asp-append-version="true" /> *@
+
+
+    <title>Krishnayan Astro</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="MobileOptimized" content="320" />
+    <link rel="shortcut icon" type="image/png" href="~/assets/images/header/favicon.png" />
+    <link rel="stylesheet" href="~/assets/vendors/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/assets/css/main.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/assets/fonts/my-icons-font/flaticon_ast.css" />
+</head>
+<body class="bg-light">
+	<div class="ast_header_bottom">
+		<div class="menu-part" role="button" data-bs-target="#sidemenu" data-bs-toggle="offcanvas">
+			<i class="fi flaticon-menu-1 fs-5"></i>
+			<span class="d-none d-lg-inline-block fs-5">Menu</span>
+		</div>
+
+		<div class="d-flex align-items-center gap-2 w-100 justify-content-between right-part">
+			<div class="ast_logo">
+				<a href="index.html"><img src="assets/images/logo.svg" class="ps-lg-3" alt="Logo" title="Logo" /></a>
+			</div>
+
+			<a href="#" class="text-nowrap short-panchang rounded-0 d-none" data-ripple>
+				<div class="monthdate">
+					Bhadrapada,
+					<span class=""> Shukla-Dashami </span>
+				</div>
+				<div class="festival-name">No Festival Today</div>
+			</a>
+
+			<div class="search-panel flex-grow-1 d-none d-lg-flex mx-4">
+				<input type="text" class="form-control" placeholder="Search here..." />
+			</div>
+
+			<div class="d-flex align-items-center gap-4">
+				<div type="button" class="position-relative shadow-none" data-bs-toggle="offcanvas"
+					 data-bs-target="#shoping-cart">
+					<i class="fi flaticon-rating fs-4"></i>
+					<span class="position-absolute top-0 start-100 translate-middle badge bg-danger">
+						2
+						<span class="visually-hidden">unread messages</span>
+					</span>
+				</div>
+				<div class="d-none d-lg-block ms-auto">
+					<div class="dropdown">
+						<a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							EN
+						</a>
+
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Hindi</a></li>
+							<li><a class="dropdown-item" href="#">English</a></li>
+							<li><a class="dropdown-item" href="#">Punjabi</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="d-flex gap-lg-4 align-items-center">
+					<a data-bs-toggle="modal" href="#login-dialog" class="text-dark loginpop">
+						<i class="fi flaticon-user-1 d-lg-none fs-5"></i>
+						<span class="d-none d-lg-inline"> Login</span>
+					</a>
+					<a data-bs-toggle="modal" href="#signup-dialog"
+					   class="btn btn-outline-dark rounded-pill px-4 loginpop d-none d-lg-block">Signup</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Header End -->
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+	<!-- Footer wrapper start-->
+	<div class="ast_footer_wrapper ast_toppadder70 ast_bottompadder20 section-spacing">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+					<div class="ast_footer_info">
+						<img src="assets/images/logo.svg" alt="Logo" />
+						<p>
+							It is a long established fact that a reader will be distracted
+							by the readable content of a page when looking at its layout.
+							The point of using Lorem Ipsum is that it has a more-or less
+							normal distribution of letters, as opposed to using 'Content
+							here, content here', making it look like readable English.
+						</p>
+						<ul>
+							<li>
+								<a href="#"><i class="fi flaticon-facebook" aria-hidden="true"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fi flaticon-linkedin" aria-hidden="true"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa flaticon-youtube" aria-hidden="true"></i></a>
+							</li>
+
+							<li>
+								<a href="#"><i class="fi flaticon-twitter" aria-hidden="true"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+					<div class="widget text-widget">
+						<h4 class="widget-title">our newsletter</h4>
+						<div class="ast_newsletter">
+							<p>
+								Making it look like readable English.The point of using Lorem
+								Ipsum is that it has a more-or less normal distribution of
+								letters.
+							</p>
+							<div class="ast_newsletter_box">
+								<input type="text" class="form-control" placeholder="Email" />
+								<button type="submit">
+									<i class="fi flaticon-paper-plane" aria-hidden="true"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-6 col-12">
+					<div class="widget text-widget">
+						<h4 class="widget-title">Astro services</h4>
+						<div class="ast_servicelink">
+							<ul>
+								<li><a href="#">horoscopes</a></li>
+								<li><a href="#">palmistry</a></li>
+								<li><a href="#">numerology</a></li>
+								<li><a href="#">Kundali</a></li>
+								<li><a href="#">Match Making</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-6 col-12">
+					<div class="widget text-widget">
+						<h4 class="widget-title">quick links</h4>
+						<div class="ast_sociallink">
+							<ul>
+								<li><a href="#">about</a></li>
+								<li><a href="#">blog</a></li>
+								<li><a href="#">Astrologers</a></li>
+								<li><a href="#">404 error</a></li>
+								<li><a href="#">contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+					<div class="widget text-widget">
+						<h4 class="widget-title">get in touch</h4>
+						<div class="ast_gettouch">
+							<ul>
+								<li>
+									<i class="fi flaticon-home-icon-silhouette" aria-hidden="true"></i>
+									<p>
+										Haripur Kalaan, Near Prem Vihar chowk, Haridwar,
+										District-Dehradun (Uttrakhand)
+									</p>
+								</li>
+								<li>
+									<i class="fi flaticon-email" aria-hidden="true"></i>
+									<a href="#">care@krishnayanastro.com</a>
+								</li>
+								<li>
+									<i class="fi flaticon-phone-call" aria-hidden="true"></i>
+									<p>+91 8755955000</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+					<div class="ast_copyright_wrapper">
+						<p>
+							&copy; Copyright 2024, All Rights Reserved,
+							<a href="#">Krishnayan Astro</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="helpcenter" id="helpcenter">
+		<span class="helpicon">
+			<i class="fi flaticon-help"></i>
+		</span>
+
+		<div class="helpdropdown" id="helpdropdown">
+			<ul>
+				<li>
+					<span>Mail us</span><a href="mailto:care@krishnayanastro.org">care@krishnayanastro.org</a>
+				</li>
+				<li>
+					<span>Call us</span><a href="tel:+918755955000">+91 8755955000</a>
+				</li>
+				<li><a href="">Feedback us</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Login -->
+	<div class="modal fade" id="login-dialog" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel">Login Form</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<button class="btn btn-outline-primary w-100 mb-3">
+							<i class="fi flaticon-google"></i> Login with Google
+						</button>
+						<span class="or-seprator my-2">Or</span>
+						<label for="" class="col-form-label">Email</label>
+						<input type="text" class="form-control mb-3" placeholder="" />
+						<label for="" class="col-form-label">Passsword</label>
+						<input type="text" class="form-control mb-3" placeholder="" />
+						<div class="d-flex align-items-center justify-content-between mb-3">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="Remenber" />
+								<label class="form-check-label" for="Remenber">
+									Remenber me
+								</label>
+							</div>
+							<a data-bs-toggle="modal" href="#forgot-password" class="loginpop">Forgot password ?</a>
+						</div>
+						<button type="submit" class="btn btn-primary w-100">Login</button>
+						<p class="d-flex align-items-center justify-content-center mt-3 gap-1">
+							Create An Account ?
+							<a href="#signup-dialog" data-bs-toggle="modal" class="loginpop text-primary">SignUp</a>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- signup -->
+	<div class="modal fade" id="signup-dialog" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5">signup Form</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<button class="btn btn-outline-primary w-100 mb-3">
+							<i class="fa fa-google"></i> Signup with Google
+						</button>
+						<span class="or-seprator my-2">Or</span>
+						<label for="" class="col-form-label">Name</label>
+						<input type="text" class="form-control mb-3" placeholder="" />
+						<label for="" class="col-form-label">Email</label>
+						<input type="text" class="form-control mb-3" placeholder="" />
+						<label for="" class="col-form-label">Mobile Number</label>
+						<input type="text" class="form-control mb-3" placeholder="" />
+						<label for="" class="col-form-label">Password</label>
+						<input type="text" class="form-control mb-3" placeholder="" />
+
+						<button type="submit" class="btn btn-primary w-100">
+							submit
+						</button>
+						<p class="d-flex align-items-center justify-content-center mt-3 gap-1">
+							Have An Account ?
+							<a data-bs-toggle="modal" href="#login-dialog" class="loginpop text-primary">Login</a>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Forgot Password -->
+	<div class="modal fade" id="forgot-password" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5">Forgot Password</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<input type="text" class="form-control mb-3" placeholder="Enter Phone / Email" />
+						<a class="btn btn-primary w-100 loginpop" href="#getotp" data-bs-toggle="modal">Send OTP</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Enter OTP -->
+	<div class="modal fade" id="getotp" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5">Enter OTP</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="mb-3 text-start fs-14 small">
+						We have succesfully sent an otp to your given email id
+						amituidesigns@gmail.com
+					</p>
+					<form class="w-100 d-block">
+						<div class="otp-container w-100">
+							<input type="text" maxlength="1" class="otp-input form-control" id="otp-1" autofocus />
+							<input type="text" maxlength="1" class="otp-input form-control" id="otp-2" />
+							<input type="text" maxlength="1" class="otp-input form-control" id="otp-3" />
+							<input type="text" maxlength="1" class="otp-input form-control" id="otp-4" />
+						</div>
+
+						<a href disabled class="text-start my-4">
+							Resend OTP <span class="text-dark opacity-50">1m</span>
+						</a>
+
+						<a class="btn btn-primary loginpop w-100" href="#set-password" data-bs-toggle="modal">Submit</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Set Password -->
+	<div class="modal fade" id="set-password" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5">Set Password</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="mb-3 text-start fs-14 small">
+						OTP matched succesfully please create your new password
+					</p>
+					<form>
+						<label for="" class="col-form-label">Enter New Password</label>
+						<input type="text" class="form-control mb-2" placeholder="" />
+
+						<label for="" class="col-form-label">Confirm Password</label>
+						<input type="text" class="form-control mb-4" placeholder="" />
+						<button class="btn btn-primary w-100" type="submit" href="#getotp" data-bs-toggle="modal">
+							Save
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="offcanvas offcanvas-end" tabindex="-1" id="shoping-cart">
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title">Shoping Cart</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+			<div class="ast_cart_bo">
+				<div class="ast_cart_list">
+					<ul>
+						<li>
+							<div class="ast_cart_img">
+								<img src="assets/images/content/products/Fengshui.jpg" class="img-fluid" />
+							</div>
+							<div class="ast_cart_info">
+								<a href="#">Yellow Sapphire</a>
+								<p>1 X ₹20.00</p>
+								<a href="javascript:;" class="ast_cart_remove"><i class="fi flaticon-close"></i></a>
+							</div>
+						</li>
+						<li>
+							<div class="ast_cart_img">
+								<img src="assets/images/content/products/Gemstone.jpg" class="img-fluid" />
+							</div>
+							<div class="ast_cart_info">
+								<a href="#">yantra</a>
+								<p>1 X ₹10.00</p>
+								<a href="javascript:;" class="ast_cart_remove"><i class="fi flaticon-close"></i></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="offcanvas-fotter bg-white p-3">
+			<div class="">
+				<p class="d-flex justify-content-between fs-5 fw-medium">
+					Total<span>₹3000</span>
+				</p>
+			</div>
+			<div class="d-flex gap-3">
+				<button type="button" class="btn btn-outline-primary w-100 rounded-pill">
+					view cart
+				</button>
+				<button type="button" class="btn btn-primary w-100 rounded-pill">
+					checkout
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="sidemenu">
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title">
+				<img src="assets/images/logo.svg" alt />
+			</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+			<ul class="list-group-2">
+				<li><a href>Home</a></li>
+				<li><a href>About us</a></li>
+				<li>Our Services</li>
+			</ul>
+		</div>
+	</div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+	<script type="text/javascript" src="~/assets/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="~/assets/vendors/swiper/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="~/assets/js/custom.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
